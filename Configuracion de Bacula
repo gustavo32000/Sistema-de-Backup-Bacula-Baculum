@@ -1,0 +1,58 @@
+----------------------------------------------------------------------
+|                     CONFIGURACIÓN DE BACULA                         |
+----------------------------------------------------------------------
+
+Dirigirse al directorio de bacula para sus respectivas configuraciones en los siguientes ficheros, deben tener la misma contraseña para 
+que no haya falla de comunicación y conexión.
+
+• bacula-dir.conf: dirigirse al directorio para la configuración de contraseña.  
+  Director {
+  Name = "bacula-dir" Messages = "Daemon"
+  QueryFile = "/etc/bacula/scripts/query.sql"
+  WorkingDirectory = "/var/lib/bacula"
+  PidDirectory = "/var/run" MaximumConcurrentJobs = 20
+  Password = "paula123"
+
+
+• bacula-sd.conf: definir contraseña para que el bacula director tenga comunicación con el Storage.
+  Storage { # definition of myself
+  Name = bacula-sd
+  SDPort = 9103 # Director's port
+  WorkingDirectory = "/var/lib/bacula"
+  Pid Directory = "/var/run"
+  Plugin Directory = "/usr/lib64" Maximum Concurrent Jobs = 20
+  }
+  Director {
+  Name = bacula-dir
+  Password = "paula123"
+  }
+  Director {
+  Name = bacula-mon
+  Password = "paula123" Monitor = yes
+  }
+  Messages {
+  Name = Standard
+  director = bacula-dir = all
+  }
+
+• bacula-fd.conf: configurar el bacula cliente para luego agregar nuevos clientes.
+  Director {
+  Name = bacula-dir
+  Password = "paula123"
+  }
+  Director {
+  Name = bacula-mon
+  Password = "paula123"
+  Monitor = yes
+  }
+  Messages {
+  Name = Standard
+  director = bacula-dir = all, !skipped, !restored, !saved
+  }
+ 
+ • bconsole: configurar el bconsole para que tenga comunicación con el Bacula director y para que logre ejecutar cada función sin dificultad.
+  Director {
+  Name = "bacula-dir" DirPort = 9101
+  Address = "192.168.X.X"
+  Password = "paula123"
+  }

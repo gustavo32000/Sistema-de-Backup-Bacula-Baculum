@@ -1,0 +1,37 @@
+----------------------------------------------------------------------
+|                      INSTALACIÓN DE BACULUM                        |
+----------------------------------------------------------------------
+
+
+Esta instalación de Baculum en el servidor será por líneas de comandos
+a) Usar la llave publica a través del comando wget (se debe estar en modo root) y agregar una lista de repositorio en el directorio de /etc/apt/
+- wget -qO - http://bacula.org/downloads/baculum/baculum.pub | apt-key add -
+- echo "
+deb [ arch=amd64 ] https://www.bacula.org/downloads/baculum/stable-11/debian bullseye main
+deb-src https://www.bacula.org/downloads/baculum/stable-11/debian bullseye main " > /etc/apt/sources.list.d/baculum.list
+
+b) Instalar los siguientes paquetes y actualizar
+
+    apt-get update && apt-get install php-bcmath php*-mbstring baculum-api baculum-api-apache2 baculum-common bacula-console baculum-web baculum-web-apache2
+
+     ( Saldra una imagen que mostrara opciones y se debe dejar opción de "mantener la versión local actualmente instalada" )
+
+c) Crear las siguientes lineas para que el usuario tenga permisos en la API
+    
+    echo "Defaults:apache "'!'"requiretty
+    www-data ALL=NOPASSWD: /usr/sbin/bconsole
+    www-data ALL=NOPASSWD: /usr/sbin/bdirjson
+    www-data ALL=NOPASSWD: /usr/sbin/bsdjson
+    www-data ALL=NOPASSWD: /usr/sbin/bfdjson
+    www-data ALL=NOPASSWD: /usr/sbin/bbconsjson
+
+d) De manera en conjunto, introduciremos los siguientes comandos los cual cambiaran los permisos de carpetas/directorios, aplicación y creara un directorio, finalizando 
+el servicio apache2.
+
+    chown www-data /etc/bacula/
+    a2enmod rewrite
+    a2ensite baculum-web baculum-api
+    service apache2 restart
+    mkdir /etc/bacula/web
+    chmod 777 /etc/bacula/*
+    

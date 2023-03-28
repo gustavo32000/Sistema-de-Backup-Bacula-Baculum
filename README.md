@@ -25,3 +25,4 @@ Ingresamos por web 192.168.X.X por el puerto 9095 (ip:port), con las credenciale
 
 a)	Seleccionaremos el lenguaje 
     
+      https://github.com/paulamendoza13/Sistema-de-Backup-Bacula-Baculum/blob/main/baculum/api2.PNG

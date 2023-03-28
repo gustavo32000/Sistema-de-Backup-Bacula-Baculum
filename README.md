@@ -12,3 +12,16 @@
 ██╔══██╗██╔══██║██║░░██╗██║░░░██║██║░░░░░██║░░░██║██║╚██╔╝██║
 ██████╦╝██║░░██║╚█████╔╝╚██████╔╝███████╗╚██████╔╝██║░╚═╝░██║
 ╚═════╝░╚═╝░░╚═╝░╚════╝░░╚═════╝░╚══════╝░╚═════╝░╚═╝░░░░░╚═╝
+
+
+----------------------------------------------------------------------
+|                   CONFIGURACIÓN DE BACULUM API                     |
+----------------------------------------------------------------------
+
+Ingresamos por web 192.168.X.X por el puerto 9095 (ip:port), con las credenciales por defecto de Baculum, realizar el respectivo test para la verificación de las configuraciones.
+      
+      Usuario: admin 
+      Contraseña: admin
+
+a)	Seleccionaremos el lenguaje 
+    

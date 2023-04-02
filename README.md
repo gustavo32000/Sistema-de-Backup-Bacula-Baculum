@@ -162,8 +162,3 @@ Para el respaldo se debe ir al historial de JOBS, en detalles del JOB selecciona
 |                           CLIENTES                                |
 ----------------------------------------------------------------------
 ![CLIENTES](https://user-images.githubusercontent.com/103973381/229325998-283a2e3a-0695-450e-873f-7cdbd85ec648.png)
-
-
-
-
-

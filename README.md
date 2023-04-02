@@ -91,6 +91,7 @@ b)	Seleccionar la opción de Puerto y agregar los puertos de Bacula 9101,9102,91
 ![WIN4](https://user-images.githubusercontent.com/103973381/229325064-744ef3d8-95c9-41bd-a6cd-de2264dde609.png)
 
 c)	En el siguiente paso dar click en “Permitir conexión” y dar click en siguiente para el paso de “Perfil” y dar click en todos los cuadros.
+
 ![WIN5](https://user-images.githubusercontent.com/103973381/229325136-cf4e699c-8387-4549-86d0-04dc1c0ce989.png)
 ![WIN6](https://user-images.githubusercontent.com/103973381/229325230-7e8b5cfc-d461-49c1-8bd4-10c4f1d56fa0.png)
 

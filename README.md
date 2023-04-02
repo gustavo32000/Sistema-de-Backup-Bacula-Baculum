@@ -79,6 +79,7 @@ a)	Ejecutar el programa .exe y aceptar la licencia de acuerdo.
 b)	Dejar el archivo de instalación por defecto y dar click siguiente.      
 c)	Seleccionar solo el cuadro de “Client” y dar click en siguiente.        
 d)	Seleccionar el tipo de instalación personalizada, realizar las siguientes acciones, luego dar click en siguiente y finalizar.
+
 ![WIN1](https://user-images.githubusercontent.com/103973381/229324850-c18e6ef6-ede5-469a-9e98-3060cfa01449.png)
 
 ## Configuración de regla entrada/salida para clientes Windows  

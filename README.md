@@ -49,5 +49,35 @@ f)	Observar las configuraciones realizadas y guardar
 |                    CONFIGURACIÓN DE WEB BACULUM                    |
 ----------------------------------------------------------------------
 
+Ingresamos por web 192.168.X.X por el puerto 9095 (ip:port), con las credenciales por defecto de Baculum, realizar el respectivo test para la verificación de las configuraciones.
+
+        Usuario: admin 
+        Contraseña: admin
+        
+a)	Selección de idioma: English
+
+b)	Introducir las credenciales que guardamos en la API
+![web2](https://user-images.githubusercontent.com/103973381/229323884-0c2e52bc-0be2-4ca5-ad8e-abda2a5192d1.png)
+
+c)	Crearemos las credenciales para el ingreso a Baculum Web
+![web3](https://user-images.githubusercontent.com/103973381/229323925-133886ca-714e-455f-9064-617a86dcc8e3.png)
+
+d)	Observar las configuraciones realizadas y guardar.
+    (El resultado es el mismo que presenta en la configuración de la API Baculum)
+
+e)	Una vez finalizado la instalación se debe ingresar con la ip y puerto e ingresar con las credenciales creada en el proceso de configuración.
+        (Bacula, Configuración gráfica de Baculum, 2022)
+
+----------------------------------------------------------------------
+|         Instalación de clientes Bacula Windows / Linux             |
+----------------------------------------------------------------------
+
+## Clientes Windows
+Descargar el archivo .exe en el siguiente enlace dependiendo de cuantos bits es su sistema operativo Windows y seguir las siguientes configuraciones.          ( https://www.bacula.org/download/11049/ ).
+
+a)	Ejecutar el programa .exe y aceptar la licencia de acuerdo.
+b)	Dejar el archivo de instalación por defecto y dar click siguiente.
+c)	Seleccionar solo el cuadro de “Client” y dar click en siguiente.
+d)	Seleccionar el tipo de instalación personalizada, realizar las siguientes acciones, luego dar click en siguiente y finalizar   
 
 

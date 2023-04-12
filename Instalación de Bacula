@@ -15,7 +15,7 @@ c) Instalación de archivos necesarios para la instalación de bacula
    ( Saldra una imagen que mostrara opciones y se debe dejar en la primera opción para q no altere la instalación)
 
 d) Luego de la instalación de de paquetes/bibliotecas y base de datos, ir al siguiente directorio y dar permiso al siguiente archivo con los siguientes comandos.
-    cd /usr/src/bacula
+    cd /usr/src/bacula-11.0.5
     chmod +x configure
 
 e) Agregar una línea, tendrá nuestra ip y correo electrónico de referencia

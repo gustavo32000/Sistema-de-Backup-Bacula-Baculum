@@ -19,7 +19,8 @@ d) Luego de la instalación de de paquetes/bibliotecas y base de datos, ir al si
     chmod +x configure
 
 e) Agregar una línea, tendrá nuestra ip y correo electrónico de referencia
-./configure --with-readline=/usr/include/readline --disable-conio --bindir=/usr/bin -- sbindir=/usr/sbin --with-scriptdir=/etc/bacula/scripts --with-working-     dir=/var/lib/bacula --with- logdir=/var/log --enable-smartalloc --with-mysql --with-archivedir=/mnt/backup --with-job- email=paular@gmail.com --with- hostname=192.168.x.x
+
+./configure --with-readline=/usr/include/readline --disable-conio --bindir=/usr/bin --sbindir=/usr/sbin --with-scriptdir=/etc/bacula/scripts --with-working-dir=/var/lib/bacula --with-logdir=/var/log --enable-smartalloc --with-mysql --with-archivedir=/mnt/backup --with-job-email=paula@gmail.com --with-hostname=192.168.X.X
 
 f) Comando de compilación (se debe ejecutar en modo root)
     make -j8 && make install && make install-autostart

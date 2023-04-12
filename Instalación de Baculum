@@ -6,6 +6,8 @@
 Esta instalación de Baculum en el servidor será por líneas de comandos
 a) Usar la llave publica a través del comando wget (se debe estar en modo root) y agregar una lista de repositorio en el directorio de /etc/apt/
 - wget -qO - http://bacula.org/downloads/baculum/baculum.pub | apt-key add -
+  (Saldra un OK)
+  
 - echo "
 deb [ arch=amd64 ] https://www.bacula.org/downloads/baculum/stable-11/debian bullseye main
 deb-src https://www.bacula.org/downloads/baculum/stable-11/debian bullseye main " > /etc/apt/sources.list.d/baculum.list

@@ -26,6 +26,7 @@ c) Crear las siguientes lineas para que el usuario tenga permisos en la API
     www-data ALL=NOPASSWD: /usr/sbin/bsdjson
     www-data ALL=NOPASSWD: /usr/sbin/bfdjson
     www-data ALL=NOPASSWD: /usr/sbin/bbconsjson
+    " > /etc/sudoers.d/baculum
 
 d) De manera en conjunto, introduciremos los siguientes comandos los cual cambiaran los permisos de carpetas/directorios, aplicación y creara un directorio, finalizando 
 el servicio apache2.

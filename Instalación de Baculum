@@ -16,7 +16,18 @@ b) Instalar los siguientes paquetes y actualizar
 
     apt-get update && apt-get install php-bcmath php*-mbstring baculum-api baculum-api-apache2 baculum-common bacula-console baculum-web baculum-web-apache2
 
+    apt-get update && apt-get install php-bcmath php*-mbstring baculum-api baculum-api-apache2 baculum-common baculum-web baculum-web-apache2
+
      ( Saldra una imagen que mostrara opciones y se debe dejar opción de "mantener la versión local actualmente instalada" )
+      
+ -----Otra forma de instalar BACULUM-----
+      apt-get install baculum-common baculum-api baculum-api-apache2
+      apt-get install baculum-common baculum-web baculum-web-apache2
+
+      Para verificar los servicios
+      a2enmod rewrite
+      a2ensite baculum-web
+
 
 c) Crear las siguientes lineas para que el usuario tenga permisos en la API
     
